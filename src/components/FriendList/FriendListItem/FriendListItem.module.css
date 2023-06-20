@@ -1,0 +1,39 @@
+.item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 70px;
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  color: black;
+
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+.avatar {
+  display: block;
+  margin-right: 16px;
+  margin-bottom: 0;
+  margin-left: 16px;
+}
+
+.status {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-left: 18px;
+
+  border-radius: 50%;
+}
+
+.status.online {
+  background-color: goldenrod;
+}
+
+.noOnline {
+  background-color: red;
+}
