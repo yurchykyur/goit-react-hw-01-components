@@ -14,13 +14,6 @@
   border-radius: 4px;
 }
 
-.avatar {
-  display: block;
-  margin-right: 16px;
-  margin-bottom: 0;
-  margin-left: 16px;
-}
-
 .status {
   display: block;
   width: 18px;
@@ -40,4 +33,14 @@
   composes: status;
 
   background-color: red;
+}
+
+.avatar {
+  display: block;
+  margin-right: 16px;
+  margin-bottom: 0;
+  margin-left: 16px;
+}
+
+.name {
 }

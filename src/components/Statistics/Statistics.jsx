@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import css from './Statisticst.module.css';
 
 export default function Statistics({ title, stats }) {
@@ -28,3 +30,14 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ).isRequired,
+};
