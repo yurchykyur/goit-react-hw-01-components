@@ -1,0 +1,11 @@
+.transactionTable {
+}
+
+th,
+td {
+  width: 150px;
+  height: 20px;
+
+  text-align: center;
+  border: 1px solid;
+}
