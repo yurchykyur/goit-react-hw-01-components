@@ -1,0 +1,88 @@
+.profile {
+  width: 250px;
+  margin-bottom: 20px;
+  background-color: cyan;
+}
+
+.description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.avatar {
+  display: block;
+  width: 100px;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-left: auto;
+}
+
+.name {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tag {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.location {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 30px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.stats > li {
+  position: relative;
+}
+
+.label {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.quantity {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 14px;
+  font-weight: 500;
+}
