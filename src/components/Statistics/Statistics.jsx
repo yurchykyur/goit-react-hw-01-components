@@ -1,34 +1,28 @@
 import PropTypes from 'prop-types';
+import getRandomHexColor from './GetRandomColor';
 
-import css from './Statisticst.module.css';
+import {Container, Title,StatList, StatListItem, StatLabel, StatPercentage} from './Statistics.styled'
 
 export default function Statistics({ title, stats }) {
   return (
-    <section className={css.statistics}>
-      {title && <h2 className={css.title}>{title}</h2>}
+    <Container>
+      {title && <Title>{title}</Title>}
 
-      <ul className={css.statList}>
+      <StatList>
         {stats.map(({ id, label, percentage }) => {
           return (
-            <li
-              className={css.item}
+            <StatListItem
               key={id}
               style={{ backgroundColor: getRandomHexColor() }}
             >
-              <span className={css.label}>{label}</span>
-              <span className={css.percentage}>{percentage}%</span>
-            </li>
+              <StatLabel>{label}</StatLabel>
+              <StatPercentage>{percentage}%</StatPercentage>
+            </StatListItem>
           );
         })}
-      </ul>
-    </section>
+      </StatList>
+    </Container>
   );
-}
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
 }
 
 Statistics.propTypes = {
