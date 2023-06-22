@@ -1,7 +1,14 @@
 import PropTypes from 'prop-types';
 import getRandomHexColor from './GetRandomColor';
 
-import {Container, Title,StatList, StatListItem, StatLabel, StatPercentage} from './Statistics.styled'
+import {
+  Container,
+  Title,
+  StatList,
+  StatListItem,
+  StatLabel,
+  StatPercentage,
+} from './Statistics.styled';
 
 export default function Statistics({ title, stats }) {
   return (

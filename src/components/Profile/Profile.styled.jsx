@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 
 export const Card = styled.div`
- margin-top: 40px;
+  margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
 
@@ -49,10 +49,10 @@ export const NickName = styled.p`
 
   font-size: 16px;
   font-weight: normal;
-  color: dimgray;  
+  color: dimgray;
 `;
 
-export const UserLocation =styled.p`
+export const UserLocation = styled.p`
   margin-top: 10px;
   margin-right: 0;
   margin-bottom: 0;
@@ -60,17 +60,18 @@ export const UserLocation =styled.p`
 
   font-size: 16px;
   font-weight: normal;
-  color: dimgray; `;
-  
-  export const UserStats =styled.ul`  
+  color: dimgray;
+`;
+
+export const UserStats = styled.ul`
   margin: 0;
   padding: 0;
 
   display: flex;
-  align-items: center;  
-  `;
-  
-  export const UserStatsItem = styled.li`
+  align-items: center;
+`;
+
+export const UserStatsItem = styled.li`
   height: 92px;
   width: calc(320px / 3);
 
@@ -83,16 +84,17 @@ export const UserLocation =styled.p`
   background-color: rgb(235, 235, 235);
 
   transition: background-color 250ms ease-in-out;
-  
-  :hover {
-  background-color: lightsteelblue;
-}
 
-:not(:last-child) {
-  border-right: 1px solid lightgray;
-}`;
-  
-  export const UserStatsTitle = styled.span`
+  :hover {
+    background-color: lightsteelblue;
+  }
+
+  :not(:last-child) {
+    border-right: 1px solid lightgray;
+  }
+`;
+
+export const UserStatsTitle = styled.span`
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
@@ -100,13 +102,15 @@ export const UserLocation =styled.p`
 
   font-size: 14px;
   font-weight: normal;
-  color: dimgray;`;
-  
-  export const UserStatsQuantity = styled.span`
+  color: dimgray;
+`;
+
+export const UserStatsQuantity = styled.span`
   margin-top: 10px;
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
 
   font-size: 16px;
-  font-weight: bold`;
+  font-weight: bold;
+`;

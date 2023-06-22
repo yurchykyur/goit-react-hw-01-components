@@ -1,6 +1,13 @@
 import PropTypes from 'prop-types';
 
-import {TableTh, TableThead, TableTbody, TableTr, TransactionTable, TableTd} from './TransactionHistory.styled'
+import {
+  TableTh,
+  TableThead,
+  TableTbody,
+  TableTr,
+  TransactionTable,
+  TableTd,
+} from './TransactionHistory.styled';
 
 export default function TransactionHistory({ items }) {
   return (

@@ -1,6 +1,17 @@
 import PropTypes from 'prop-types';
 
-import {Container, Card, UserAvatar,UserName,NickName,UserLocation,UserStats,UserStatsItem,UserStatsTitle,UserStatsQuantity} from './Profile.styled'
+import {
+  Container,
+  Card,
+  UserAvatar,
+  UserName,
+  NickName,
+  UserLocation,
+  UserStats,
+  UserStatsItem,
+  UserStatsTitle,
+  UserStatsQuantity,
+} from './Profile.styled';
 
 export default function Profile({
   userName,
@@ -14,7 +25,7 @@ export default function Profile({
   return (
     <Container>
       <Card>
-        <UserAvatar src={avatar} alt="User avatar"  />
+        <UserAvatar src={avatar} alt="User avatar" />
         <UserName>{userName}</UserName>
         <NickName>@{tag}</NickName>
         <UserLocation>{location}</UserLocation>
